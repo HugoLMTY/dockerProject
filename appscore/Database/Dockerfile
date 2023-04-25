@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/mssql/server:2017-latest
 
 ENV ACCEPT_EULA=Y
-ENV MSSQL_SA_PASSWORD=Pass@word
+ENV MSSQL_SA_PASSWORD=password
 
 # Mise à jour du système d'exploitation Ubuntu 16.04
 RUN apt-get update && apt-get -y upgrade
