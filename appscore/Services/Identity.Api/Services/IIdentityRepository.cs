@@ -1,8 +1,8 @@
 ﻿
-using Identity.Api.Models;
+using identity.api.Models;
 using System.Threading.Tasks;
 
-namespace Identity.Api.Services
+namespace identity.api.Services
 {
     public interface IIdentityRepository
     {

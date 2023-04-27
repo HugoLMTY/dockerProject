@@ -1,10 +1,10 @@
 ﻿
 using System.Threading.Tasks;
 using Events;
-using Identity.Api.Services;
+using identity.api.Services;
 using MassTransit;
 
-namespace Identity.Api.Messaging.Consumers
+namespace identity.api.Messaging.Consumers
 {
     public class ApplicantAppliedEventConsumer : IConsumer<ApplicantAppliedEvent>
     {

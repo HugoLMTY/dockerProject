@@ -1,6 +1,6 @@
 ﻿ 
 
-namespace Identity.Api.Models
+namespace identity.api.Models
 {
     public class User
     {

@@ -25,7 +25,7 @@ namespace Jobs.Api.Services
             using (var dbConnection = Connection)
             {
                 dbConnection.Open();
-                return await dbConnection.QueryAsync<Job>("SELECT * FROM Jobs");
+                return await dbConnection.QueryAsync<Job>("SELECT * FROM jobs");
             }
         }
 

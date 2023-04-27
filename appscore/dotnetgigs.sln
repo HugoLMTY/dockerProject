@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{A79C663C-57A5-48B7-BF5B-2F5DDDBF866C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Api", "Services\Identity.Api\Identity.Api.csproj", "{91EBB73B-ABF1-41CB-8D39-A4E17AE32E2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "identity.api", "Services\identity.api\identity.api.csproj", "{91EBB73B-ABF1-41CB-8D39-A4E17AE32E2F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Foundation\Events\Events.csproj", "{939ABF9A-2C7E-4A2D-8C44-5BB6DA926C68}"
 EndProject

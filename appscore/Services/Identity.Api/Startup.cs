@@ -2,9 +2,9 @@
 using System;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Identity.Api.Messaging.Consumers;
-using Identity.Api.Models;
-using Identity.Api.Services;
+using identity.api.Messaging.Consumers;
+using identity.api.Models;
+using identity.api.Services;
 using MassTransit;
 using MassTransit.Util;
 using Microsoft.AspNetCore.Builder;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StackExchange.Redis;
 
-namespace Identity.Api
+namespace identity.api
 {
     public class Startup
     {

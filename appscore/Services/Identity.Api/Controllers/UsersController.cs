@@ -1,11 +1,11 @@
 ﻿ 
  
 using System.Threading.Tasks;
-using Identity.Api.Models;
-using Identity.Api.Services;
+using identity.api.Models;
+using identity.api.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Identity.Api.Controllers
+namespace identity.api.Controllers
 {
     [Route("api/[controller]")]
     public class UsersController : Controller

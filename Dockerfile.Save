@@ -19,8 +19,8 @@ COPY appscore/Foundation/Events Events/
 COPY appscore/Services/ Services/
 
 RUN dotnet restore Services/Applicants.Api/applicants.api.csproj
-#NOTES: identity.Api.csproj with capital A and I
-RUN dotnet restore Services/Identity.Api/Identity.Api.csproj
+#NOTES: identity.api.csproj with capital A and I
+RUN dotnet restore Services/identity.api/identity.api.csproj
 RUN dotnet restore Services/Jobs.Api/jobs.api.csproj
 
 RUN dotnet restore Events/Events.csproj
@@ -32,8 +32,8 @@ RUN mkdir -p /app/build
 WORKDIR /Services/Applicants.Api/
 RUN dotnet build "applicants.api.csproj" -c Release -o /app/build
 
-# WORKDIR /src/Services/Identity.Api
-# RUN dotnet build Identity.Api.csproj -c Release -o /app/build
+# WORKDIR /src/Services/identity.api
+# RUN dotnet build identity.api.csproj -c Release -o /app/build
 
 # WORKDIR /src/Services/Jobs.Api
 # RUN dotnet build jobs.api.csproj -c Release -o /app/build
@@ -47,8 +47,8 @@ RUN dotnet build "applicants.api.csproj" -c Release -o /app/build
 # WORKDIR /src/Services/Applicants.Api
 # RUN dotnet publish applicants.api.csproj -c Release -o /app/publish
 
-# WORKDIR /src/Services/Identity.Api
-# RUN dotnet publish Identity.Api.csproj -c Release -o /app/publish
+# WORKDIR /src/Services/identity.api
+# RUN dotnet publish identity.api.csproj -c Release -o /app/publish
 
 # WORKDIR /src/Services/Jobs.Api
 # RUN dotnet publish jobs.api.csproj -c Release -o /app/publish

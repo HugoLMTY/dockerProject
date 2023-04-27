@@ -10,20 +10,20 @@ EXPOSE 443
 # --------------- Build ---------------
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS build
 WORKDIR /src
-COPY "appscore/Services/Jobs.Api" "Services/Jobs.Api/"
-COPY "appscore/Foundation/Events" "Foundation/Events/"
+COPY "appscore/Web" "Web/"
+COPY "appscore/Foundation/Http" "Foundation/Http/"
 
-RUN dotnet restore "Services/Jobs.Api/jobs.api.csproj"
+RUN dotnet restore "Web/Web.csproj"
 COPY . .
-WORKDIR "/src/Services/Jobs.Api"
-RUN dotnet build "jobs.api.csproj" -c Release -o /app/build
+WORKDIR "/src/Web/"
+RUN dotnet build "Web.csproj" -c Release -o /app/build
 
 
 # --------------- Publish ---------------
 FROM build AS publish
-RUN dotnet publish "jobs.api.csproj" -c Release -o /app/publish
+RUN dotnet publish "Web.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-CMD ["dotnet", "jobs.api.dll"]
+CMD ["dotnet", "Web.dll"]

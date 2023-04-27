@@ -1,11 +1,11 @@
 ﻿
 using System;
 using System.Threading.Tasks;
-using Identity.Api.Models;
+using identity.api.Models;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
-namespace Identity.Api.Services
+namespace identity.api.Services
 {
     public class IdentityRepository : IIdentityRepository
     {
